@@ -2,7 +2,10 @@
     <header>
         <h2>{{ name }}`s Tasks</h2>
         <menu>
-            <button>Add Task</button>
+            <button (click)="onAddTask()">Add Task</button>
+            @if (addNewTask) {
+                <app-new-task (close)="onCloseTaskComponent($event)"/>
+            }
         </menu>
     </header>
     <ul>
