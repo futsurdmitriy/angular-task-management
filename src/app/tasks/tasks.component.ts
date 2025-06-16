@@ -52,7 +52,7 @@ export class TasksComponent {
     this.isAddingTask = true;
   }
 
-  onCloseTaskComponent(close: boolean) {
+  onCancelAddTask() {
     this.isAddingTask = false;
   }
 }
